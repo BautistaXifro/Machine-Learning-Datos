@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 102,
+   "execution_count": 136,
    "metadata": {
     "id": "_219fnmO6uYV"
    },
@@ -17,7 +17,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 103,
+   "execution_count": 137,
    "metadata": {
     "colab": {
      "base_uri": "https://localhost:8080/",
@@ -447,7 +447,7 @@
        "[16947 rows x 52 columns]"
       ]
      },
-     "execution_count": 103,
+     "execution_count": 137,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -468,7 +468,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 104,
+   "execution_count": 138,
    "metadata": {
     "id": "8Mr15awY_0Jd"
    },
@@ -489,7 +489,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 105,
+   "execution_count": 139,
    "metadata": {
     "id": "ulNZyEJnH-JC"
    },
@@ -510,7 +510,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 106,
+   "execution_count": 140,
    "metadata": {
     "id": "364cGQKJCkjk"
    },
@@ -524,7 +524,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 107,
+   "execution_count": 141,
    "metadata": {
     "colab": {
      "base_uri": "https://localhost:8080/",
@@ -554,7 +554,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 108,
+   "execution_count": 142,
    "metadata": {
     "id": "rqgDBLUiIkvV"
    },
@@ -565,7 +565,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 123,
+   "execution_count": 143,
    "metadata": {},
    "outputs": [
     {
@@ -580,7 +580,7 @@
        "dtype: int64"
       ]
      },
-     "execution_count": 123,
+     "execution_count": 143,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -594,7 +594,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 122,
+   "execution_count": 144,
    "metadata": {},
    "outputs": [
     {
@@ -603,7 +603,7 @@
        "15083"
       ]
      },
-     "execution_count": 122,
+     "execution_count": 144,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -614,7 +614,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 110,
+   "execution_count": 145,
    "metadata": {},
    "outputs": [
     {
@@ -712,7 +712,7 @@
        "4                                 0                                   1  "
       ]
      },
-     "execution_count": 110,
+     "execution_count": 145,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -726,7 +726,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 111,
+   "execution_count": 146,
    "metadata": {
     "id": "Hb2Hz871HRCQ"
    },
@@ -738,7 +738,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 112,
+   "execution_count": 147,
    "metadata": {
     "colab": {
      "base_uri": "https://localhost:8080/",
@@ -760,310 +760,55 @@
    },
    "outputs": [
     {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>Region</th>\n",
-       "      <th>Delivery_Year</th>\n",
-       "      <th>Delivery_Quarter</th>\n",
-       "      <th>TRF</th>\n",
-       "      <th>Pricing, Delivery_Terms_Approved</th>\n",
-       "      <th>Pricing, Delivery_Terms_Quote_Appr</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>EMEA</td>\n",
-       "      <td>2016</td>\n",
-       "      <td>Q2</td>\n",
-       "      <td>10</td>\n",
-       "      <td>1</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>EMEA</td>\n",
-       "      <td>2016</td>\n",
-       "      <td>Q1</td>\n",
-       "      <td>0</td>\n",
-       "      <td>0</td>\n",
-       "      <td>0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>Americas</td>\n",
-       "      <td>2016</td>\n",
-       "      <td>Q1</td>\n",
-       "      <td>0</td>\n",
-       "      <td>0</td>\n",
-       "      <td>0</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>Americas</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q1</td>\n",
-       "      <td>14</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>Americas</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q1</td>\n",
-       "      <td>25</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "     Region  Delivery_Year Delivery_Quarter  TRF  \\\n",
-       "0      EMEA           2016               Q2   10   \n",
-       "1      EMEA           2016               Q1    0   \n",
-       "2  Americas           2016               Q1    0   \n",
-       "3  Americas           2018               Q1   14   \n",
-       "4  Americas           2018               Q1   25   \n",
-       "\n",
-       "   Pricing, Delivery_Terms_Approved  Pricing, Delivery_Terms_Quote_Appr  \n",
-       "0                                 1                                   1  \n",
-       "1                                 0                                   0  \n",
-       "2                                 0                                   0  \n",
-       "3                                 0                                   1  \n",
-       "4                                 0                                   1  "
-      ]
-     },
-     "execution_count": 112,
-     "metadata": {},
-     "output_type": "execute_result"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Training (15083, 6) (15083,)\n",
+      "Test (1435, 6) (1435,)\n"
+     ]
     }
    ],
    "source": [
-    "X_training.head()"
+    "print ('Training', X_training.shape, Y_training.shape)\n",
+    "print ('Test', X_test.shape, Y_test.shape)"
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 113,
+   "cell_type": "markdown",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>Region</th>\n",
-       "      <th>Delivery_Year</th>\n",
-       "      <th>Delivery_Quarter</th>\n",
-       "      <th>TRF</th>\n",
-       "      <th>Pricing, Delivery_Terms_Approved</th>\n",
-       "      <th>Pricing, Delivery_Terms_Quote_Appr</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>EMEA</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q4</td>\n",
-       "      <td>6</td>\n",
-       "      <td>1</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>APAC</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q4</td>\n",
-       "      <td>27</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>APAC</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q4</td>\n",
-       "      <td>27</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>APAC</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q4</td>\n",
-       "      <td>15</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>APAC</td>\n",
-       "      <td>2018</td>\n",
-       "      <td>Q4</td>\n",
-       "      <td>4</td>\n",
-       "      <td>0</td>\n",
-       "      <td>1</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "  Region  Delivery_Year Delivery_Quarter  TRF  \\\n",
-       "0   EMEA           2018               Q4    6   \n",
-       "1   APAC           2018               Q4   27   \n",
-       "2   APAC           2018               Q4   27   \n",
-       "3   APAC           2018               Q4   15   \n",
-       "4   APAC           2018               Q4    4   \n",
-       "\n",
-       "   Pricing, Delivery_Terms_Approved  Pricing, Delivery_Terms_Quote_Appr  \n",
-       "0                                 1                                   1  \n",
-       "1                                 0                                   1  \n",
-       "2                                 0                                   1  \n",
-       "3                                 0                                   1  \n",
-       "4                                 0                                   1  "
-      ]
-     },
-     "execution_count": 113,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
    "source": [
-    "X_test.head()"
+    "# Encoder"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 114,
+   "execution_count": 148,
    "metadata": {
     "id": "NUktFhwQGKW_"
    },
    "outputs": [],
    "source": [
-    "ohe = OneHotEncoder()\n",
+    "ohe = OneHotEncoder(handle_unknown= 'ignore')\n",
     "ohe.fit(X_training)\n",
     "X_training_enc = ohe.transform(X_training)\n",
-    "ohe.fit(X_test)\n",
     "X_test_enc = ohe.transform(X_test)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 125,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "<15083x108 sparse matrix of type '<class 'numpy.float64'>'\n",
-       "\twith 90498 stored elements in Compressed Sparse Row format>"
-      ]
-     },
-     "execution_count": 125,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "X_training_enc"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 128,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "15083"
-      ]
-     },
-     "execution_count": 128,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "Y_training.count()"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 126,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "<1435x44 sparse matrix of type '<class 'numpy.float64'>'\n",
-       "\twith 8610 stored elements in Compressed Sparse Row format>"
-      ]
-     },
-     "execution_count": 126,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "X_test_enc"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 115,
+   "execution_count": 164,
    "metadata": {
     "id": "qifHB_41RF0t"
    },
    "outputs": [],
    "source": [
-    "rfc = RandomForestClassifier(n_estimators=1000)\n",
+    "rfc = RandomForestClassifier(n_estimators=1000, max_depth = 5)\n",
     "#n_estimators se refiere a la cantidad de arboles de decisiones que usa el rfc"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 116,
+   "execution_count": 165,
    "metadata": {
     "colab": {
      "base_uri": "https://localhost:8080/"
@@ -1086,10 +831,10 @@
     {
      "data": {
       "text/plain": [
-       "RandomForestClassifier(n_estimators=1000)"
+       "RandomForestClassifier(max_depth=1, n_estimators=1000)"
       ]
      },
-     "execution_count": 116,
+     "execution_count": 165,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1100,34 +845,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 117,
+   "execution_count": 166,
    "metadata": {
     "id": "AeXFDbkAKGKf"
    },
-   "outputs": [
-    {
-     "ename": "ValueError",
-     "evalue": "Number of features of the model must match the input. Model n_features is 108 and input n_features is 44 ",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-117-7dd7800f0e87>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mrfc_pred\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrfc\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpredict\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX_test_enc\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[0;32m~/anaconda3/lib/python3.8/site-packages/sklearn/ensemble/_forest.py\u001b[0m in \u001b[0;36mpredict\u001b[0;34m(self, X)\u001b[0m\n\u001b[1;32m    627\u001b[0m             \u001b[0mThe\u001b[0m \u001b[0mpredicted\u001b[0m \u001b[0mclasses\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    628\u001b[0m         \"\"\"\n\u001b[0;32m--> 629\u001b[0;31m         \u001b[0mproba\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpredict_proba\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    630\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    631\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mn_outputs_\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;32m~/anaconda3/lib/python3.8/site-packages/sklearn/ensemble/_forest.py\u001b[0m in \u001b[0;36mpredict_proba\u001b[0;34m(self, X)\u001b[0m\n\u001b[1;32m    671\u001b[0m         \u001b[0mcheck_is_fitted\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    672\u001b[0m         \u001b[0;31m# Check data\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 673\u001b[0;31m         \u001b[0mX\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_validate_X_predict\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    674\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    675\u001b[0m         \u001b[0;31m# Assign chunk of trees to jobs\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;32m~/anaconda3/lib/python3.8/site-packages/sklearn/ensemble/_forest.py\u001b[0m in \u001b[0;36m_validate_X_predict\u001b[0;34m(self, X)\u001b[0m\n\u001b[1;32m    419\u001b[0m         \u001b[0mcheck_is_fitted\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    420\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 421\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mestimators_\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_validate_X_predict\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mX\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcheck_input\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    422\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    423\u001b[0m     \u001b[0;34m@\u001b[0m\u001b[0mproperty\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;32m~/anaconda3/lib/python3.8/site-packages/sklearn/tree/_classes.py\u001b[0m in \u001b[0;36m_validate_X_predict\u001b[0;34m(self, X, check_input)\u001b[0m\n\u001b[1;32m    394\u001b[0m         \u001b[0mn_features\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mX\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mshape\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    395\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mn_features_\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0mn_features\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 396\u001b[0;31m             raise ValueError(\"Number of features of the model must \"\n\u001b[0m\u001b[1;32m    397\u001b[0m                              \u001b[0;34m\"match the input. Model n_features is %s and \"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    398\u001b[0m                              \u001b[0;34m\"input n_features is %s \"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;31mValueError\u001b[0m: Number of features of the model must match the input. Model n_features is 108 and input n_features is 44 "
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "rfc_pred = rfc.predict(X_test_enc)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 167,
    "metadata": {
     "colab": {
      "base_uri": "https://localhost:8080/"
@@ -1146,18 +875,29 @@
     "id": "GBhgHCllOrNF",
     "outputId": "13b3ff96-26c7-4f88-98ca-43bea263fdec"
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "              precision    recall  f1-score   support\n",
+      "\n",
+      " Closed Lost       0.71      0.07      0.13       640\n",
+      "  Closed Won       0.57      0.98      0.72       795\n",
+      "\n",
+      "    accuracy                           0.57      1435\n",
+      "   macro avg       0.64      0.52      0.42      1435\n",
+      "weighted avg       0.63      0.57      0.45      1435\n",
+      "\n",
+      "[[ 45 595]\n",
+      " [ 18 777]]\n"
+     ]
+    }
+   ],
    "source": [
     "print(classification_report(Y_test, rfc_pred))\n",
     "print(confusion_matrix(Y_test, rfc_pred))"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

@@ -1,6 +1,6 @@
 # Organización de Datos (75.06)
 
-## TP1 2do cuatrimestre - 2020
+## TP2 2do cuatrimestre - 2020
 
 ### Grupo: Que Buena Data Papá
 
